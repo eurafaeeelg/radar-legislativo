@@ -1,0 +1,25 @@
+name: Resumos dos deputados
+on:
+  schedule:
+    - cron: "0 10 * * *"
+  workflow_dispatch:        # permite rodar manualmente
+permissions:
+  contents: write
+jobs:
+  resumos-deputados:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python resumo_deputados.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Salvar resumos
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add deputados_resumos.json
+          git diff --cached --quiet || (git commit -m "Atualiza resumos dos deputados" && git pull --rebase && git push)
