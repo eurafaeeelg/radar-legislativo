@@ -3,7 +3,8 @@ import json, time
 from concurrent.futures import ThreadPoolExecutor
 import requests
 
-API = "https://dadosabertos.camara.leg.br/api/v2/deputados"
+BASE = "https://dadosabertos.camara.leg.br/api/v2"
+API = BASE + "/deputados"
 HEADERS = {"Accept": "application/json"}
 
 def pegar(url, params=None):
@@ -50,6 +51,15 @@ with ThreadPoolExecutor(max_workers=5) as ex:
 json.dump(lista, open("deputados.json", "w", encoding="utf-8"), ensure_ascii=False)
 com_perfil = sum(1 for d in lista if "nomeCivil" in d)
 print(f"{len(lista)} deputados salvos, {com_perfil} com perfil completo")
+
+# Logos dos partidos
+partidos = {}
+for pt in pegar(f"{BASE}/partidos", {"itens": 100, "ordem": "ASC", "ordenarPor": "sigla"}) or []:
+    det = pegar(f"{BASE}/partidos/{pt['id']}")
+    if det and det.get("urlLogo"):
+        partidos[pt["sigla"]] = det["urlLogo"]
+json.dump(partidos, open("partidos.json", "w", encoding="utf-8"), ensure_ascii=False)
+print(len(partidos), "logos de partidos salvas")
 
 f = requests.get(lista[0]["urlFoto"], timeout=30)
 print("foto de exemplo:", f.status_code, f.headers.get("content-type"))
