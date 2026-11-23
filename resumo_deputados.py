@@ -6,7 +6,7 @@ import requests
 CAMARA = "https://dadosabertos.camara.leg.br/api/v2"
 GEMINI = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent"
 CHAVE = os.environ.get("GEMINI_API_KEY")
-MAX_NOVOS = 40
+MAX_NOVOS = 600   # todos os deputados em uma execução
 ARQUIVO = "deputados_resumos.json"
 
 PROMPT = """Você escreve uma apresentação curta de um deputado federal brasileiro para o público geral.
@@ -36,6 +36,9 @@ def gemini(texto):
         return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])["resumo"]
     raise RuntimeError("limite do Gemini atingido")
 
+def salvar(dados):
+    json.dump(dados, open(ARQUIVO, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
 def main():
     if not CHAVE:
         sys.exit("Defina GEMINI_API_KEY nos Secrets do GitHub.")
@@ -44,7 +47,7 @@ def main():
         dados = json.load(open(ARQUIVO, encoding="utf-8"))
     except FileNotFoundError:
         dados = {}
-    novos = 0
+    novos = falhas = 0
     for d in deps:
         if str(d["id"]) in dados or novos >= MAX_NOVOS:
             continue
@@ -60,11 +63,18 @@ def main():
                      f"Projetos recentes de autoria:\n" + "\n".join(ementas))
             dados[str(d["id"])] = gemini(PROMPT + fatos)
             novos += 1
+            falhas = 0
             print("ok", d["nome"])
+            if novos % 20 == 0:
+                salvar(dados)
         except Exception as e:
             print("falhou", d["nome"], e)
-        time.sleep(8)
-    json.dump(dados, open(ARQUIVO, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            falhas += 1
+            if falhas >= 3:
+                print("Limite do Gemini atingido. Parando; o resto fica para a próxima execução.")
+                break
+        time.sleep(7)
+    salvar(dados)
     print(f"{novos} resumos novos, {len(dados)} no total")
 
 main()
