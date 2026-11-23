@@ -19,5 +19,5 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add deputados.json
+          git add deputados.json partidos.json
           git diff --cached --quiet || (git commit -m "Atualiza deputados" && git pull --rebase && git push)
