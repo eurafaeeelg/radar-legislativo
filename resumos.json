@@ -1,1 +1,58 @@
-{}
+{
+ "2659905": {
+  "resumo": "O projeto de lei reajusta o limite máximo de faturamento para que empresas possam optar pelo regime de tributação do lucro presumido, elevando o teto anual de R$ 78 milhões para R$ 157,56 milhões. Ele também atualiza o valor mensal proporcional para empresas que funcionaram por menos de um ano e altera a faixa que torna obrigatório o regime de lucro real. Caso seja aprovada, a medida passará a valer a partir de 1º de janeiro do ano seguinte ao de sua publicação.",
+  "mudancas": [
+   "Aumenta de R$ 78 milhões para R$ 157,56 milhões o teto de receita bruta anual para a opção pelo lucro presumido.",
+   "Eleva de R$ 6,5 milhões para R$ 13,13 milhões o limite mensal para empresas que atuaram por menos de 12 meses no ano anterior.",
+   "Altera para mais de R$ 157,56 milhões anuais o patamar a partir do qual a empresa é obrigada a adotar o regime de lucro real.",
+   "Estabelece que as alterações entrarão em vigor no dia 1º de janeiro do ano subsequente à publicação da lei."
+  ],
+  "a_favor": [
+   "Corrige a defasagem acumulada desde 2013 com base na inflação medida pelo IPCA.",
+   "Evita que empresas sejam excluídas do regime simplificado apenas pelo aumento nominal de receitas decorrente da inflação.",
+   "Preserva as demais condições legais já existentes para a opção pelo lucro presumido."
+  ],
+  "contra": [
+   "O documento apresentado não registra argumentos contrários nem detalha eventuais impactos na arrecadação tributária."
+  ],
+  "fonte": "texto integral"
+ },
+ "2659678": {
+  "resumo": "O projeto regulamenta o procedimento de consulta prévia, livre e informada a povos indígenas e comunidades tradicionais afetados por obras ou medidas governamentais. A proposta separa o processo de consulta do licenciamento ambiental e estabelece prazos fixos, ritos padronizados e regras sobre quando a concordância expressa das comunidades é indispensável. Além disso, define que a União pode delegar a condução operacional a estados e municípios e autoriza o empreendedor a executar etapas materiais sob supervisão estatal.",
+  "mudancas": [
+   "Define prazos máximos para a consulta (de 60 a 270 dias, conforme o porte) e prevê que o procedimento avance caso a comunidade não se manifeste no prazo legal.",
+   "Separa formalmente a consulta prévia do licenciamento ambiental, tornando-os procedimentos autônomos que tramitam de forma independente.",
+   "Restringe as situações em que a comunidade tem poder de veto efetivo (consentimento qualificado), permitindo que o Congresso Nacional aprove projetos de mineração ou hidrelétricas mesmo sem consentimento prévio.",
+   "Cria regras padronizadas e ritos mais rápidos para tipos comuns de empreendimentos e permite consulta única agregada para corredores logísticos inteiros."
+  ],
+  "a_favor": [
+   "Oferece segurança jurídica, previsibilidade e prazos definidos para evitar atrasos prolongados em investimentos e obras de infraestrutura.",
+   "Cria regras documentais detalhadas, com uso de plataforma digital auditável, equipe multidisciplinar e fiscalização por observadores independentes em grandes projetos.",
+   "Assegura direitos materiais às comunidades atingidas, incluindo indenizações amplas e participação contínua nos lucros de hidrelétricas e mineração."
+  ],
+  "contra": [
+   "Prazos curtos e regras que interpretam o silêncio como concordância tácita podem atropelar o tempo tradicional de discussão e decisão interna das comunidades.",
+   "A possibilidade de o empreendedor financiar e conduzir etapas da consulta pode gerar conflitos de interesse e diminuir a imparcialidade do processo.",
+   "A autorização para que o Congresso Nacional supere a discordância comunitária em casos de exploração mineral, hídrica ou impacto em sítios sagrados relativiza a proteção dos direitos indígenas."
+  ],
+  "fonte": "texto integral"
+ },
+ "2659462": {
+  "resumo": "O projeto de lei determina que unidades de saúde públicas e privadas ofereçam acolhimento em sala reservada para vítimas de violências como psicológica, moral e patrimonial, mesmo sem ferimentos físicos visíveis. Ele também garante que essas vítimas recebam informações claras sobre seus direitos e sobre os serviços de proteção disponíveis. Para ter acesso a esse atendimento, a pessoa não precisará apresentar boletim de ocorrência nem comprovar previamente a violência.",
+  "mudancas": [
+   "Vítimas de violências sem lesão física aparente (como psicológica ou patrimonial) ganham direito a acolhimento em sala reservada na rede pública e privada.",
+   "Unidades de saúde passam a ser obrigadas a informar essas vítimas sobre seus direitos e serviços de proteção disponíveis de forma clara.",
+   "O atendimento reservado e o acesso às informações independem de registro de boletim de ocorrência policial.",
+   "Não é exigida comprovação prévia da violência sofrida para ter acesso ao acolhimento e às orientações."
+  ],
+  "a_favor": [
+   "Nem toda violência deixa marcas visíveis, mas agressões psicológicas, morais e patrimoniais também adoecem e exigem apoio na saúde.",
+   "Dispensar o boletim de ocorrência evita afastar a vítima que ainda não se sente pronta ou segura para denunciar formalmente.",
+   "A proposta aproveita as salas e capacitações já previstas na legislação, sem a necessidade de criar novas estruturas físicas."
+  ],
+  "contra": [
+   "O documento não apresenta argumentos contrários à proposta."
+  ],
+  "fonte": "texto integral"
+ }
+}
