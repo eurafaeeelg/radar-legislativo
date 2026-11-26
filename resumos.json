@@ -54,5 +54,25 @@
    "O documento não apresenta argumentos contrários à proposta."
   ],
   "fonte": "texto integral"
+ },
+ "2660068": {
+  "resumo": "O projeto de lei garante que trabalhadores com deficiência ou no espectro autista tenham direito à manutenção de adaptações em seu ambiente e rotina de trabalho para permanecerem no cargo. A proposta impede que ajustes já concedidos sejam retirados por troca de chefia ou reorganização interna sem justificativa técnica. Além disso, estabelece regras rígidas para que empresas e órgãos públicos analisem e respondam aos pedidos de adaptação.",
+  "mudancas": [
+   "O trabalhador com deficiência tem direito a adaptações contínuas (como ajustes de horários, equipamentos ou redução de estímulos sensoriais) sem sofrer corte de salário.",
+   "A transferência do profissional para outra função torna-se a última opção, só permitida se ficar comprovado que os ajustes no cargo atual foram insuficientes.",
+   "Adaptações já feitas não podem ser canceladas por simples mudança de chefia, gestão ou setor, exigindo avaliação técnica fundamentada para qualquer alteração.",
+   "O empregador passa a ter o prazo de 30 dias para responder formalmente aos pedidos de adaptação e deve comprovar tecnicamente caso alegue custo excessivo para recusar."
+  ],
+  "a_favor": [
+   "Evita a perda de direitos e a descontinuidade do trabalho causadas por mera troca de chefia ou conveniência administrativa.",
+   "Atende às necessidades específicas de pessoas autistas, garantindo previsibilidade de rotina e redução de sobrecarga sensorial.",
+   "Dá efetividade à Lei Brasileira de Inclusão ao criar procedimentos claros e fiscalização para que as adaptações realmente saiam do papel."
+  ],
+  "contra": [
+   "Aumenta a burocracia e as exigências documentais e técnicas impostas a empresas e órgãos públicos.",
+   "Pode restringir a flexibilidade dos empregadores na gestão de equipes e na reorganização de seus quadros de funcionários.",
+   "Pode elevar a litigiosidade na Justiça do Trabalho em disputas sobre o que configura encargo financeiro excessivo para o empregador."
+  ],
+  "fonte": "texto integral"
  }
 }
